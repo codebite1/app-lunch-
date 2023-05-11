@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Code Bite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Code Bite</h1>
+<div class="box1">
+  <img src="" alt="">
+  <h1>what is Code Bite</h1>
+  <p>Code bite is a application that established on 2023 may 15. Created for sharing programmes to other people's. This application create a lot of help full for beginners in programming and who can show their development skills through this application.</p>
+</div>  
+ <div id="box2">
+    <h3>about app</h3>
+    <p>download free html css js java etc programming free with source</p>
+    <p id="p">6.7MB | v 1.0 | 15 MAY 2023</p>
+    <button>Download</button>
+ </div>
+  <div id="box3">
+    <h2>Features</h2>
+    <div class="sub">
+      <img src="https://firebasestorage.googleapis.com/v0/b/big-movie-store-2955a.appspot.com/o/st%2Floupe.png?alt=media&token=24186781-6d31-4a03-b892-9045b327b853">
+      <h3>Search</h3>
+      <p>users can find projects</p>
+    </div>
+    <div class="sub">
+      <img src="https://firebasestorage.googleapis.com/v0/b/big-movie-store-2955a.appspot.com/o/st%2Fcollaboration.png?alt=media&token=ac7a962c-ff47-456a-952b-52ec41b275be" alt="">
+      <h3>Share</h3>
+      <p>users can Share their project to others</p>
+    </div>
+    <div class="sub">
+      <img src="https://firebasestorage.googleapis.com/v0/b/big-movie-store-2955a.appspot.com/o/st%2Fmotion-graphic.png?alt=media&token=3ee38b47-b932-4297-963e-f47ddbc10ed4" alt="">
+      <h3>Animation</h3>
+      <p>user friendly interface and animation</p>
+    </div>
+    <div class="sub">
+      <img src="https://firebasestorage.googleapis.com/v0/b/big-movie-store-2955a.appspot.com/o/st%2Fbanned.png?alt=media&token=7ba5ab29-b065-41b1-8ab5-e84a33533589" alt="">
+      <h3>Report</h3>
+      <p>users can report project and comments</p>
+    </div>
+  </div>
+  <div id="box4">
+    <h2>Explore</h2>
+  <div id="explore">
+    <div id="img">
+      <img src="https://bit.ly/42sASG4" >
+    </div>
+  </div>
+      <p>download app now to get project free </p>
+  </div>
+ <footer>
+   <div id="footer">
+     <img src="" alt="">
+     <div id="contact">
+       <h2>contact</h2>
+       <p><a href="mailto: codebite.contact@gmail.com">email</a></p>
+       <p><a href="https://wa.me/917510305731?text=">phone</a></p>
+     </div>
+     <div id="blog">
+       <h2>blog</h2>
+       <p><a href="https://bit.ly/3VX2OzK">privacy policy</a></p>
+       <p><a href="">users rule</a></p>
+     </div>
+   </div>
+ </footer>
+  
+  
+  
+  
+  
+  
+</body>
+<script src="https://kit.fontawesome.com/240d754c8a.js" crossorigin="anonymous"></script>
+  <script>
+    var img = document.getElementById('img');
+    
+    var slides = ['https://bit.ly/42sASG4','https://bit.ly/3MhLrpR','https://bit.ly/44UbBGr','https://bit.ly/3MgO0IG','https://bit.ly/3HXy2Ri'];
+    
+    var start = 0;
+    
+    function slider() {
+      if (start < slides.length) {
+        start = start + 1;
+      }
+      else {
+        start = 1;
+      }
+      console.log(img);
+      img.innerHTML = "<img src=" + slides[start - 1] + ">";
+    
+    }
+    setInterval(slider, 5000);
+    
+    </script>
+  </script>
+</html>
